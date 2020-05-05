@@ -167,7 +167,8 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 11px 57px;
+  width: 100%;
+  padding: 11px 0;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -183,21 +184,15 @@ html {
     background-color: #fff;
     color: #00acdc; }
 
-.main {
+.main__grid {
+  max-width: 1024px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(4, 200px);
+  grid-template-columns: repeat(auto-fit, 200px);
   grid-template-rows: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   gap: 50px 48px; }
-
-@media only screen and (max-width: 944px) {
-  .main {
-    grid-template-columns: repeat(2, 200px); } }
-
-@media only screen and (max-width: 448px) {
-  .main {
-    grid-template-columns: 200px; } }
 
 /*# sourceMappingURL=main.css.map */
